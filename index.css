@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+/* font-family: 'Nunito', sans-serif; */
+
+:after,
+:before,
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: transparent;
+}
+
+.Prod-dialog * {
+  font-family: 'Nunito', sans-serif;
+}
+
+.Prodclear {
+  clear: both;
+}
+
+.Prod-pull-right {
+  float: right !important;
+}
+
+.Prod-pulk-left {
+  float: left !important;
+}
+
+.Prod-col-4 {
+  width: 45%;
+  float: left;
+  padding: 0px 15px;
+}
+
+.Prod-col-8 {
+  width: 55%;
+  float: left;
+  padding: 0px 15px 0px 30px;
+}
+
+/* dialog start */
+
+.Prod-dialog.active {
+  visibility: visible;
+  position: fixed;
+  background: rgb(33, 32, 32);
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  transition: all 0.5s;
+  padding: 30px;
+  z-index: 99999;
+}
+
+.Prod-container {
+  max-width: 1440px;
+  background: #fff;
+  margin: auto;
+  /* box-shadow: 0px 0px 15px #ffffff; */
+  padding: 0px;
+  margin-top: 50px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  background: linear-gradient(to right, white 44%, #f9fafb 44%);
+}
+
+.Prod-Gallery-footer .Prod-col-8 {
+  padding-right: 0px;
+}
+
+/* width */
+
+.Prod-container::-webkit-scrollbar,
+.Prod_slider::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+
+.Prod-container::-webkit-scrollbar-track,
+.Prod_slider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+.Prod-container::-webkit-scrollbar-thumb,
+.Prod_slider::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+
+.Prod-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.Prod-scroll-hidden {
+  overflow: hidden;
+}
+
+#Prod-dialog-close {
+  position: absolute;
+  right: 40px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background: #fff;
+  border-radius: 50%;
+}
+
+#Prod-dialog-close:hover {
+  opacity: 1;
+}
+
+#Prod-dialog-close:before,
+#Prod-dialog-close:after {
+  position: absolute;
+  left: 19px;
+  content: ' ';
+  height: 24px;
+  width: 2px;
+  background-color: #212020;
+  z-index: 4;
+  /* z-index: 888; */
+  top: 9px;
+}
+
+#Prod-dialog-close:before {
+  transform: rotate(45deg);
+}
+
+#Prod-dialog-close:after {
+  transform: rotate(-45deg);
+}
+
+/* dialog end  */
+
+/* header start */
+
+.Prod-header h2 {
+  color: #252525;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+  text-align: left;
+  position: relative;
+  margin: 0px 0px 25px 0px;
+  padding: 0px 0px 15px 0px;
+}
+
+.Prod-header h2:before {
+  position: absolute;
+  content: '';
+  width: 65px;
+  height: 3px;
+  background: #FA7000;
+  bottom: 0px;
+}
+
+/* header end*/
+
+/* footer start */
+
+.Prod-footer {
+  padding: 15px;
+  background: #fff;
+}
+
+.Prod-footer p {
+  color: #6A7070;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  margin: 0px;
+}
+
+.Prod-footer p a {
+  color: #6A7070;
+  text-decoration: none;
+}
+
+/* footer end */
+
+/* form start*/
+
+.Prod-invoice-sec {
+  max-width: 994px;
+  margin: auto;
+  /* background: #f1f1f1;
+    background: linear-gradient(to right, white 40%, #f9fafb 40%); */
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding: 30px;
+  border-bottom: 1px solid #979797;
+}
+
+.Prod-col-6 {
+  width: 50%;
+  padding: 0px 15px;
+  float: left;
+}
+
+.Prod-row {
+  margin: 0px -15px;
+}
+
+.Prod-form-row {
+  margin-bottom: 15px;
+}
+
+.Prod-form-row label {
+  color: #9B9B9B;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.Prod-form-row p {
+  color: #252525;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0px;
+}
+
+/* form end*/
+
+/* Gallery Start */
+
+.Prod-Gallery {
+  margin: 15px 0px;
+}
+
+.Prod-Gallery-Header {
+  position: relative;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 8px;
+}
+
+.Prod-Gallery-Header h2 {
+  color: #6A7070;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 19px;
+  margin: 0px;
+  padding: 10px 0px;
+  display: inline-block;
+}
+
+.Prod-tabs {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+}
+
+.Prod-tabs li {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 32px;
+  padding: 0px 8px 0px 8px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+ul.Prod-tabs img {
+  width: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+li#Prod-tab1.active,
+li#Prod-tab2.active {
+  background: #ddd;
+}
+
+.Prod-Gallery-body {
+  padding: 15px 0px 15px 0px;
+}
+
+/* Gallery Start */
+
+/* Tab Start */
+
+.Prod-tab-link.current {
+  background: #d8d8d8;
+  color: #5B5B5B;
+}
+
+.Prod-tab-link.current {
+  display: inline-block;
+}
+
+.Prod-tab-content {
+  display: none;
+}
+
+.Prod-tab-content.current {
+  display: block;
+}
+
+li#ProdSelectedTab.current {
+  background: transparent;
+}
+
+/* Tab End*/
+
+/* selected */
+
+.Prod-grid-group li {
+  position: relative;
+}
+
+.Prod-grid-group li.selected {
+  position: relative;
+}
+
+.Prod-grid-group li.selected:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(250, 112, 0, 0.60);
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+.Prod-grid-group li.selected:before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 30px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  z-index: 1;
+}
+
+.Prod-grid-group {
+  margin: 0px;
+  padding: 0px;
+  margin-left: -15px;
+}
+
+.Prod-grid-group li {
+  margin: 0px;
+  padding: 0px;
+  width: 110px;
+  height: 110px;
+  list-style-type: none;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.Prod-grid-group li img {
+  max-width: 100%;
+}
+
+table.Prod-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.Prod-table tfoot tr td {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  padding: 18px 0px;
+  font-size: 18px;
+}
+
+table.Prod-table td,
+table.Prod-table th {
+  text-align: left;
+}
+
+table.Prod-table tr th,
+table.Prod-table tr td {
+  padding: 5px 40px 10px 0px;
+}
+
+.Prod-table thead th {
+  font-weight: 700;
+  color: #6A7070;
+  font-size: 16px;
+}
+
+.Prod-table tbody td {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #252525;
+}
+
+.Prod-table tfoot td {
+  font-weight: 700;
+  color: #252525;
+  font-size: 16px;
+}
+
+.Prod-payment-action {
+  padding: 50px 0px 0px 0px;
+  text-align: right;
+}
+
+.Prod-payment-action button {
+  border: 2px solid #FA7000;
+  opacity: 0.8;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 8px 15px;
+  background: transparent;
+  text-transform: uppercase;
+  color: #FA7000;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.Prod-payment-action button:hover {
+  color: #fff;
+  background-color: #FA7000;
+  box-shadow: 0 2px 6px 4px rgba(250, 112, 0, 0.25);
+}
+
+/* slider start */
+
+.Prod_slider {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 35px;
+}
+
+.lSSlideOuter .lSPager.lSGallery img {
+  width: 100%;
+}
+
+/* slider End */
+
+.Prod_slider ul li {
+  white-space: nowrap;
+  margin-bottom: 0px;
+}
+
+.Prodt-mark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #bfc3c3;
+  float: left;
+  margin-right: 10px;
+  top: 5px;
+  border-radius: 4px;
+}
+
+.Prodt-mark::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 14px;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  z-index: 1;
+}
+
+.Prod-tab-link.current .Prodt-mark {
+  background: #bfc3c3;
+}
+
+.Prod-tab-link.current .Prodt-mark::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0px;
+  left: 6px;
+  z-index: 1;
+}
+
+.Prod-Caption {
+  margin: 8px 0px 0px 0px;
+  font-size: 14px;
+}
+
+.newImgViewer {
+  width: 150px;
+  height: 800px;
+}
+
+.Prod_slider {
+  position: relative;
+}
+
+.Prod_Arrow {
+  width: 50px;
+  height: 50px;
+  background: #bfc3c3;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.Prod_Arrow.left {
+  left: 0px;
+  top: 45%;
+}
+
+.Prod_Arrow.left::before {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 20px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.Prod_Arrow.right {
+  right: 0px;
+  top: 45%;
+}
+
+.Prod_Arrow.right::before {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 20px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.Prod-slider-view {
+  text-align: center;
+  position: relative;
+  height: 450px;
+}
+
+.Prod-slider-view img {
+  height: 400px;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin-top: 25px;
+}
+
+.Prod_Selected {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  right: 200px;
+  border-radius: 4px;
+}
+
+.Prod_Selected[isselected="true"]::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 16px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 1;
+}
+
+.Prod_Selected::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #bfc3c3;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 6px;
+}
+
+.allitems li {
+  display: none;
+}
+
+.allitems li.selected {
+  display: inline-block;
+}
+
+#Prod-grid-slider li.isactive {
+  border: 4px solid #fa7000;
+}
+
+#Prod-grid-slider li {
+  border: 4px solid transparent;
+}
+
+#ProdSelectedTab.current span.ProdAllImages {
+  display: none;
+}
+
+span.ProdAllImages {
+  display: none;
+}
+
+.Prod-tab-link.current span.ProdSelectedImg {
+  display: inline-block;
+}
